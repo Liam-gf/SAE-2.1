@@ -1,0 +1,10 @@
+mpm/Controleur.java
+
+mpm/ihm/FrameMpm.java
+mpm/ihm/PanelAction.java
+mpm/ihm/PanelMpm.java
+mpm/ihm/TacheGraphique.java
+
+mpm/metier/CheminCritique.java
+mpm/metier/Mpm.java
+mpm/metier/Tache.java

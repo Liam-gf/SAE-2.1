@@ -1,0 +1,12 @@
+Architecte|4|
+Fondations (creuser)|2|Architecte
+Commande des matériaux|1|Architecte
+Commande des huisseries|1|Architecte
+Livraison des matériaux|2|Commande des matériaux
+Fondations (coulage dalle)|2|Fondations (creuser),Livraison des matériaux
+Livraison des huisseries|7|Commande des huisseries
+Pose des murs|10|Fondations (coulage dalle)
+Pose charpente et toit|7|Pose des murs
+Électricité et plomberie|4|Pose des murs,Pose charpente et toit
+Pose des huisseries|2|Livraison des huisseries,Pose des murs
+Livraison|0|Électricité et plomberie,Pose des huisseries

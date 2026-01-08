@@ -443,7 +443,7 @@ public class PanelAction extends JPanel implements ActionListener, TableModelLis
 		Tache   prc;
 		
 		int     premierligne;
-		int     dernièreLigne;
+		int     derniereLigne;
 		int     colonne;
 		int     count;
 		String  messageErreur;
@@ -460,15 +460,15 @@ public class PanelAction extends JPanel implements ActionListener, TableModelLis
 		
 		
 		premierligne   = e.getFirstRow();
-		dernièreLigne  = e.getLastRow();
+		derniereLigne  = e.getLastRow();
 		colonne        = e.getColumn();
 		// Si la colonne ou les lignes ne sont pas valides, on ignore
-		if ( colonne < 0 || premierligne < 0 || dernièreLigne < 0 ) return;
+		if ( colonne < 0 || premierligne < 0 || derniereLigne < 0 ) return;
 		
 		mpm = this.ctrl.getMpm();
 		toutesLesTaches = mpm.getTaches();
 		
-		for ( int ligne = premierligne; ligne <= dernièreLigne; ligne++ )
+		for ( int ligne = premierligne; ligne <= derniereLigne; ligne++ )
 		{
 			// Trouver la tâche correspondant à la ligne visible en sautant "Début" et "Fin"
 			count = -1;
